@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!-- saved from url=(0253)https://d2f92887-6bf7-4f58-bd5e-82b8d7f28c1c.frame.claudeusercontent.com/_f/1783354078-658d/?__frame_t=nHY91xLL8_ljug8VNOCpcSdv.586154b7-1fc9-4bf4-a401-b6dde1866043.75e89ed8-43b3-4880-8697-fc13c455eeb6.1783357679&__frame_v=manifest.bd9446110d1c7761.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1783354078-658d/">--><base href="."><script>window.__FRAME_PREAMBLE={"capabilities":{"mcp":"mcp.BQqQVVN_.js"},"transforms":"_transforms.DYk1Ltlh.js"}</script><script>(function(){"use strict";const X="modulepreload",Y=function(e){return"/"+e},Z={},U=function(t,n,u){let o=Promise.resolve();function i(f){const a=new Event("vite:preloadError",{cancelable:!0});if(a.payload=f,window.dispatchEvent(a),!a.defaultPrevented)throw f}return o.then(f=>{for(const a of f||[])a.status==="rejected"&&i(a.reason);return t().catch(i)})},D=["light","dark","system"];function $(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_init;return t!=null&&typeof t=="object"}function q(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_theme;if(t==null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&D.includes(n)}function M(e){if(window===top||e.type==="auxclick"&&e.button!==1)return;const t=e.composedPath?e.composedPath():[e.target];let n=null;for(let f=0;f<t.length;f++){const a=t[f];if(a&&a.matches&&a.matches("a[href],area[href]")){n=a;break}}if(!n&&e.target&&e.target.closest&&(n=e.target.closest("a[href],area[href]")),!n)return;const u=n.getAttribute("href");if(!u)return;let o,i;try{o=new URL(u,document.baseURI),i=new URL(document.baseURI).origin}catch{return}(o.protocol==="http:"||o.protocol==="https:")&&o.origin!==i&&(e.preventDefault(),parent.postMessage({__frame_nav:!0,url:o.href},"*"))}const L={};function y(e){if(window===top)return;const t=Date.now();t-(L[e]||0)<500||(L[e]=t,parent.postMessage({__frame_engaged:!0,kind:e},"*"))}const F=2e3,T=["wheel","touchstart","touchmove","keydown","pointerdown"];let k=0;function B(e){e.isTrusted&&(k=Date.now())}function z(){addEventListener("click",M,!0),addEventListener("auxclick",M,!0)}function W(){for(let e=0;e<T.length;e++)addEventListener(T[e],B,{capture:!0,passive:!0});addEventListener("scroll",e=>{e.isTrusted&&Date.now()-k<F&&y("scroll")},{capture:!0,passive:!0}),addEventListener("pointermove",e=>{e.isTrusted&&y("pointer")},{capture:!0,passive:!0}),addEventListener("click",e=>{e.isTrusted&&y("click")},{capture:!0,passive:!0})}function x(e,t,n){const u=[...t.values()].filter(o=>o.targets.some(i=>i.startsWith(e+".")));return{wrap(o,i){const f=`${e}.${o}`,a=u.filter(s=>s.targets.includes(f));return a.length===0?(...s)=>{try{return i(...s)}catch(d){return Promise.reject(d)}}:(...s)=>{let d=s;for(const c of a){const l=c.module.parameters;if(l)try{d=l(d)}catch{return Promise.reject({code:"transform_error",id:c.id,scope:e,message:"parameters transform failed"})}}let m;try{m=i(...d)}catch(c){m=Promise.reject(c)}return m.then(c=>{for(let l=a.length-1;l>=0;l--){const h=a[l],p=h.module.returns;if(p)try{c=p(c)}catch{return n({id:h.id,scope:e,leg:"returns"}),c}}return c},c=>{for(let l=a.length-1;l>=0;l--){const h=a[l],p=h.module.throws;if(p)try{c=p(c)}catch{return n({id:h.id,scope:e,leg:"throws"}),Promise.reject(c)}}return Promise.reject(c)})}}}}function H(e,t,n,u=()=>{}){const o=new Set(e.changes??[]),i=new Map;for(const f of o){const a=t[f];a&&i.set(f,a)}return{contract:e.contract,changes:o,flags:new Set(e.flags??[]),capabilities:e.capabilities??{},transforms:i,shellOrigin:n.shellOrigin,mount:n.mount,pipe:f=>x(f,i,u)}}(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let u=0;for(let o=0;o<n.length;o++){const i=n[o];try{e(t,i,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[i]}catch{}try{e(t,i,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[i]=="function"&&u++}if(u&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:u},"*")}catch{}})();const K=1e4,G=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function J(e){for(const t of G)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}const w=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities??{}}),E=window.__FRAME_PREAMBLE?.transforms,C=/^[\w.-]+\.js$/,V=/^[a-z][a-z0-9_-]{0,63}$/;let A=null,g=null;function P(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}let R=!1;function N(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,R=!0):R&&(delete t.dataset.theme,t.style.colorScheme="",R=!1)}const _=new Map;function Q(e,t){const n=_.get(e);if(!n)return;Object.assign(n.impl,t),n.impl.__settled=()=>Promise.reject({code:"capability_removed",message:`${e}: method not in this runtime`});const u=n.queue;n.queue=[];for(const o of u){const i=t[o.method];i?i(...o.args).then(o.resolve,o.reject):o.reject({code:"capability_removed",message:`${e}.${o.method} is not in this runtime`})}}function O(e,t){const n=_.get(e);if(!n)return;n.impl.__settled=()=>Promise.reject(t);const u=n.queue;n.queue=[];for(const o of u)o.reject(t)}const j=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(j&&j.writable===!1)){z(),W();const e=j?.value??{};P(window,"claude",e);const t=s=>{const d={impl:Object.create(null),queue:[]};_.set(s,d);const m=new Proxy(d.impl,{get:(c,l)=>{if(typeof l=="string"&&!(l==="then"||l==="toJSON"||l==="valueOf"))return l==="toString"?Object.prototype.toString:(...h)=>{const p=c[l]??c.__settled;return p?p(...h):new Promise((b,S)=>{d.queue.push({method:l,args:h,resolve:b,reject:S})})}},set:()=>!1});P(e,s,m)};for(const s of Object.keys(w)){if(e[s]!==void 0){P(e,s,e[s]);continue}t(s)}let n=null,u=null,o=0;const i=s=>{s.source!==parent||!J(s.origin)||$(s.data)&&(n=s.data.__frame_init,g=s.origin,removeEventListener("message",i),clearTimeout(o),u?.())};addEventListener("message",i),parent.postMessage({__frame_connect:!0},"*");const f=new Promise(s=>{u=s,o=setTimeout(()=>{removeEventListener("message",i),s()},K)}),a=document.readyState==="loading"?new Promise(s=>document.addEventListener("DOMContentLoaded",()=>s(),{once:!0})):Promise.resolve();f.then(async()=>{if(!n||!g){for(const r of _.keys())O(r,{code:"not_granted",message:"frame initialization did not arrive - capability unavailable"});return}N(n.theme);const s=g;addEventListener("message",r=>{r.source!==parent||r.origin!==s||q(r.data)&&N(r.data.__frame_theme.theme)});const d=r=>U(()=>import("/_runtime/"+r),void 0),m=Object.keys(n.capabilities??{});for(const r of m)Object.hasOwn(w,r)||V.test(r)&&e[r]===void 0&&(t(r),O(r,{code:"capability_disabled",message:"capability not in this runtime generation"}));const c=m.filter(r=>Object.hasOwn(w,r)).map(r=>[r,w[r]]).filter(r=>typeof r[1]=="string"&&C.test(r[1])),[l,...h]=await Promise.allSettled([E&&C.test(E)?d(E):Promise.resolve({}),...c.map(([,r])=>d(r))]),p=g;A=H(n,l.status==="fulfilled"&&l.value?.TRANSFORMS||{},{shellOrigin:p,mount:Q},r=>parent.postMessage({__frame_cap_telemetry:r},p));const b=r=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:r}},p),S=A;h.forEach((r,v)=>{const I=c[v][0];if(r.status!=="fulfilled"){b(I);return}try{r.value?.install?.(S)}catch{b(I)}});for(const[r,v]of _)v.queue.length===0&&Object.keys(v.impl).length>0||O(r,{code:m.includes(r)?"capability_disabled":"not_granted",message:"capability not available in this session"});await a,parent.postMessage({__frame_ready:!0},g)})}})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>Sovereign AI Platform — Reference Architecture</title>
+<style>
+  :root {
+    --paper:#F7F8F9; --surface:#FFFFFF; --surface-2:#F0F3F4;
+    --ink:#12181D; --muted:#566673; --faint:#8895A1;
+    --line:#E0E5E9; --line-strong:#C9D1D7;
+    --accent:#0C6B72; --accent-ink:#0A565C; --accent-soft:#E4F0F0;
+    --signal:#B2551A; --signal-soft:#F7E9DD;
+    --good:#2F7D4F; --warn:#9C7415; --crit:#A83643;
+    --shadow:0 1px 2px rgba(18,24,29,.06), 0 8px 24px rgba(18,24,29,.05);
+    --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#0B1015; --surface:#131A21; --surface-2:#0F161C;
+      --ink:#E8EDF1; --muted:#93A2AF; --faint:#6B7A87;
+      --line:#22303A; --line-strong:#2E3F4B;
+      --accent:#40B7BF; --accent-ink:#5FC8CF; --accent-soft:#0E2529;
+      --signal:#E28B44; --signal-soft:#2A1B10;
+      --good:#4FAE75; --warn:#D2A63F; --crit:#D96575;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"] {
+    --paper:#F7F8F9; --surface:#FFFFFF; --surface-2:#F0F3F4;
+    --ink:#12181D; --muted:#566673; --faint:#8895A1;
+    --line:#E0E5E9; --line-strong:#C9D1D7;
+    --accent:#0C6B72; --accent-ink:#0A565C; --accent-soft:#E4F0F0;
+    --signal:#B2551A; --signal-soft:#F7E9DD;
+    --good:#2F7D4F; --warn:#9C7415; --crit:#A83643;
+    --shadow:0 1px 2px rgba(18,24,29,.06), 0 8px 24px rgba(18,24,29,.05);
+  }
+  :root[data-theme="dark"] {
+    --paper:#0B1015; --surface:#131A21; --surface-2:#0F161C;
+    --ink:#E8EDF1; --muted:#93A2AF; --faint:#6B7A87;
+    --line:#22303A; --line-strong:#2E3F4B;
+    --accent:#40B7BF; --accent-ink:#5FC8CF; --accent-soft:#0E2529;
+    --signal:#E28B44; --signal-soft:#2A1B10;
+    --good:#4FAE75; --warn:#D2A63F; --crit:#D96575;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .page {
+    background:var(--paper); color:var(--ink);
+    font-family:var(--sans); line-height:1.6;
+    -webkit-font-smoothing:antialiased; font-smoothing:antialiased;
+    padding:clamp(20px,5vw,64px) clamp(18px,5vw,40px) 80px;
+  }
+  .wrap { max-width:920px; margin:0 auto; }
+  .col { max-width:68ch; }
+
+  /* ---- type ---- */
+  .eyebrow {
+    font-family:var(--mono); font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--accent-ink); font-weight:600;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before {
+    content:""; width:26px; height:2px; background:var(--accent); display:inline-block;
+  }
+  h1 {
+    font-size:clamp(30px,5.4vw,50px); line-height:1.04; letter-spacing:-.022em;
+    font-weight:800; margin:20px 0 0; text-wrap:balance; max-width:16ch;
+  }
+  .standfirst {
+    font-size:clamp(16px,2.4vw,20px); color:var(--muted); margin:18px 0 0;
+    max-width:60ch; line-height:1.5;
+  }
+  h2 {
+    font-size:clamp(21px,3vw,27px); letter-spacing:-.015em; font-weight:750;
+    margin:0 0 4px; text-wrap:balance;
+  }
+  h3 { font-size:16px; font-weight:700; letter-spacing:-.006em; margin:0 0 6px; }
+  p { margin:0 0 14px; }
+  strong { font-weight:680; }
+  a { color:var(--accent-ink); }
+
+  .sec-num {
+    font-family:var(--mono); font-size:12px; color:var(--faint);
+    letter-spacing:.1em; font-weight:600;
+  }
+  section { margin-top:clamp(44px,7vw,72px); }
+  .sec-head { border-top:1px solid var(--line); padding-top:20px; margin-bottom:22px; }
+
+  /* ---- meta chips ---- */
+  .meta {
+    display:flex; flex-wrap:wrap; gap:8px; margin-top:28px;
+  }
+  .chip {
+    font-family:var(--mono); font-size:11.5px; letter-spacing:.03em;
+    color:var(--muted); background:var(--surface); border:1px solid var(--line);
+    padding:5px 10px; border-radius:6px; display:inline-flex; gap:7px; align-items:center;
+  }
+  .chip b { color:var(--ink); font-weight:600; }
+
+  /* ---- framing callout ---- */
+  .frame {
+    display:grid; grid-template-columns:1fr 1fr; gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:12px;
+    overflow:hidden; margin-top:8px;
+  }
+  .frame > div { background:var(--surface); padding:20px 22px; }
+  .frame .k {
+    font-family:var(--mono); font-size:11px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint); margin-bottom:8px;
+  }
+  .frame .big { font-size:15px; }
+  .frame .have .pct { color:var(--good); }
+  .frame .need .pct { color:var(--signal); }
+  .pct { font-weight:750; }
+  @media (max-width:560px){ .frame { grid-template-columns:1fr; } }
+
+  /* ---- diagram scaffolding ---- */
+  .diagram-wrap { overflow-x:auto; padding:6px 2px 12px; margin:0 -2px; }
+  .diagram-caption {
+    font-family:var(--mono); font-size:11.5px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--faint); margin:0 0 14px;
+  }
+  .flow {
+    display:flex; align-items:stretch; gap:0; min-width:640px;
+  }
+  .node {
+    background:var(--surface); border:1px solid var(--line-strong); border-radius:10px;
+    padding:12px 14px; min-width:118px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:4px; justify-content:center;
+  }
+  .node .nt { font-size:13.5px; font-weight:680; letter-spacing:-.005em; }
+  .node .ns { font-family:var(--mono); font-size:10.5px; color:var(--muted); line-height:1.45; }
+  .arrow {
+    align-self:center; color:var(--line-strong); flex:0 0 auto;
+    display:flex; align-items:center; padding:0 4px; font-size:18px;
+  }
+  .arrow span { color:var(--accent); }
+
+  .tag-note {
+    background:var(--accent-soft); border:1px solid transparent; border-radius:10px;
+    padding:14px 16px; margin-top:16px; font-size:14.5px; color:var(--ink);
+  }
+  .tag-note code, .mono-inline {
+    font-family:var(--mono); font-size:12.5px; background:var(--surface);
+    border:1px solid var(--line); border-radius:5px; padding:1px 6px; color:var(--accent-ink);
+    white-space:nowrap;
+  }
+  @media (prefers-color-scheme: dark){ .tag-note { border-color:var(--line); } }
+
+  /* ---- gateway (query path) ---- */
+  .gate-stack { display:flex; flex-direction:column; align-items:center; gap:0; }
+  .lane { text-align:center; }
+  .lane .node { min-width:220px; align-items:center; text-align:center; }
+  .vlink {
+    width:2px; height:22px; background:var(--line-strong); position:relative;
+  }
+  .vlink::after {
+    content:""; position:absolute; bottom:0; left:50%; transform:translateX(-50%);
+    border-left:5px solid transparent; border-right:5px solid transparent;
+    border-top:6px solid var(--line-strong);
+  }
+  .vlink.on { background:var(--accent); }
+  .vlink.on::after { border-top-color:var(--accent); }
+  .vlabel {
+    font-family:var(--mono); font-size:10.5px; color:var(--muted);
+    letter-spacing:.02em; padding:2px 8px; white-space:nowrap;
+  }
+  .gateway {
+    border:1.5px solid var(--signal); background:var(--surface);
+    border-radius:12px; padding:6px; box-shadow:var(--shadow);
+    position:relative; min-width:300px;
+  }
+  .gateway::before {
+    content:"single enforcement point"; position:absolute; top:-10px; right:14px;
+    font-family:var(--mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--signal); background:var(--paper); padding:0 8px;
+  }
+  .gateway .gtitle {
+    font-weight:750; font-size:14px; letter-spacing:.02em; text-align:center;
+    padding:8px 0 10px; color:var(--signal);
+  }
+  .gstep {
+    display:grid; grid-template-columns:24px 1fr; gap:10px; align-items:baseline;
+    padding:7px 12px; border-top:1px solid var(--line);
+  }
+  .gstep .gn {
+    font-family:var(--mono); font-size:12px; font-weight:600; color:var(--signal);
+  }
+  .gstep .gtxt { font-size:13px; }
+  .gstep .gtxt b { font-weight:670; }
+  .gstep .gmeta { font-family:var(--mono); font-size:10.5px; color:var(--muted); }
+
+  /* ---- properties list ---- */
+  .props { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:22px; }
+  .prop {
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:15px 17px;
+  }
+  .prop .pn {
+    font-family:var(--mono); font-size:11px; color:var(--accent-ink); font-weight:600;
+    letter-spacing:.06em; margin-bottom:6px;
+  }
+  .prop h3 { margin-bottom:5px; }
+  .prop p { font-size:13.5px; color:var(--muted); margin:0; }
+  @media (max-width:620px){ .props { grid-template-columns:1fr; } }
+
+  /* ---- sovereignty taxonomy ---- */
+  .sov { display:flex; flex-direction:column; gap:10px; }
+  .sov-row {
+    display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:start;
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:16px 18px;
+  }
+  .sov-key {
+    display:flex; flex-direction:column; gap:2px; min-width:120px;
+  }
+  .sov-key .letter {
+    font-family:var(--mono); font-weight:700; font-size:13px; color:var(--accent);
+  }
+  .sov-key .name { font-weight:700; font-size:14.5px; letter-spacing:-.006em; }
+  .sov-body p { margin:0 0 8px; font-size:14px; }
+  .sov-body p:last-child { margin:0; }
+  .sov-body .ctrl { color:var(--muted); font-size:13.5px; }
+  @media (max-width:560px){ .sov-row { grid-template-columns:1fr; gap:8px; } }
+
+  /* ---- table ---- */
+  .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:12px; }
+  table { border-collapse:collapse; width:100%; min-width:560px; font-size:13.5px; background:var(--surface); }
+  thead th {
+    text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--faint); font-weight:600;
+    padding:12px 16px; border-bottom:1px solid var(--line-strong); white-space:nowrap;
+  }
+  tbody td { padding:11px 16px; border-bottom:1px solid var(--line); vertical-align:top; }
+  tbody tr:last-child td { border-bottom:none; }
+  td .why { color:var(--muted); }
+  .verb {
+    font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.03em;
+    padding:3px 8px; border-radius:5px; white-space:nowrap; display:inline-block;
+  }
+  .verb.build { color:var(--signal); background:var(--signal-soft); }
+  .verb.buy { color:var(--accent-ink); background:var(--accent-soft); }
+  .flag {
+    font-family:var(--mono); font-size:10.5px; color:var(--crit);
+    display:inline-block; margin-top:3px;
+  }
+
+  /* ---- decisions / footer ---- */
+  .decisions { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .decision {
+    border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:0 10px 10px 0; padding:16px 18px; background:var(--surface);
+  }
+  .decision h3 { margin-bottom:7px; }
+  .decision p { font-size:13.5px; color:var(--muted); margin:0; }
+  @media (max-width:620px){ .decisions { grid-template-columns:1fr; } }
+
+  footer {
+    margin-top:64px; padding-top:20px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11.5px; color:var(--faint);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  .lede { font-size:15.5px; }
+  ul.tight { margin:6px 0 14px; padding-left:20px; }
+  ul.tight li { margin-bottom:6px; }
+</style>
+
+<div class="page">
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Sovereign AI Platform · Reference Architecture</div>
+    <h1>Turning the stack into an offering.</h1>
+    <p class="standfirst">The HPE&nbsp;+&nbsp;NVIDIA AI Factory gives you the infrastructure substrate. This is the product layer that sits on top — and the enforcement design that lets you promise customers their AI only ever surfaces UK-sovereign data.</p>
+    <div class="meta">
+      <span class="chip"><b>Audience</b> regulated &amp; public-sector buyers</span>
+      <span class="chip"><b>Assumes</b> managed sovereign AI platform</span>
+      <span class="chip"><b>Rev</b> 2026-07-06</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">01 / FRAMING</span><h2>Platform is not product</h2></div>
+    <p class="col lede">The diagram is roughly 70% of the <em>infrastructure</em> and 20% of the <em>product</em>. The commodity substrate — Kubernetes, bare-metal OS, Morpheus, NIM, Run.ai — is done. What's missing is everything a customer signs up for, trusts, and pays for.</p>
+    <div class="frame">
+      <div class="have">
+        <div class="k">Already in the stack — buy / operate</div>
+        <div class="big"><span class="pct">~70%</span> infra · <span class="pct">~20%</span> product</div>
+        <p style="margin:10px 0 0;color:var(--muted);font-size:13.5px;">GPU/DPU, container platform, hypervisor, internal control plane &amp; metering, in-region model serving.</p>
+      </div>
+      <div class="need">
+        <div class="k">The gap you build</div>
+        <div class="big"><span class="pct">Gateway</span> · <span class="pct">Data plane</span> · <span class="pct">Console</span></div>
+        <p style="margin:10px 0 0;color:var(--muted);font-size:13.5px;">Enforcement, the RAG/data plane, and the customer-facing surface — where your differentiation and your sovereignty claim actually live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">02 / DATA PLANE</span><h2>Ingestion — where trust is established</h2></div>
+    <p class="col">Sovereignty is earned at ingest, not policed at query time. Every chunk leaves this pipeline carrying immutable metadata, and <strong>untagged data is unretrievable by construction</strong> — the retrieval filter requires the tag, so anything that skipped the classifier simply never surfaces.</p>
+
+    <div class="diagram-wrap">
+      <p class="diagram-caption">Fig. 1 — Ingestion / data plane</p>
+      <div class="flow">
+        <div class="node"><span class="nt">Customer source</span><span class="ns">SharePoint · DBs<br>files · S3-compat</span></div>
+        <div class="arrow"><span>→</span></div>
+        <div class="node"><span class="nt">Ingestion</span><span class="ns">connectors<br>validate · AV scan</span></div>
+        <div class="arrow"><span>→</span></div>
+        <div class="node"><span class="nt">Classifier</span><span class="ns">residency · class'n<br>lineage tags</span></div>
+        <div class="arrow"><span>→</span></div>
+        <div class="node"><span class="nt">Chunk + embed</span><span class="ns">in-region model<br>NIM</span></div>
+        <div class="arrow"><span>→</span></div>
+        <div class="node"><span class="nt">Vector DB</span><span class="ns">per-tenant index<br>+ metadata</span></div>
+      </div>
+    </div>
+    <div class="tag-note">
+      Every chunk carries <code>tenant_id</code> <code>residency=UK</code> <code>classification</code> <code>source_id</code> <code>ingested_by</code> <code>lawful_basis</code>. The data catalog is the source of truth for these tags and lineage — cheaper to enforce here than to reconstruct at query time.
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">03 / ENFORCEMENT</span><h2>Query path — one choke point</h2></div>
+    <p class="col">All inference — portal, API, agents — routes through a single model gateway. There are no side doors to the raw vector DB or the model, so the sovereignty policy has exactly one place to be right.</p>
+
+    <div class="diagram-wrap">
+      <p class="diagram-caption">Fig. 2 — Query path &amp; enforcement</p>
+      <div class="gate-stack" style="min-width:320px;">
+        <div class="lane"><div class="node"><span class="nt">Client</span><span class="ns">portal · API · CLI</span></div></div>
+        <div class="vlink on"></div>
+        <div class="vlabel">OIDC token · tenant + roles</div>
+        <div class="vlink on"></div>
+
+        <div class="gateway">
+          <div class="gtitle">MODEL GATEWAY</div>
+          <div class="gstep"><span class="gn">1</span><span class="gtxt"><b>AuthN / AuthZ</b> — <span class="gmeta">who is asking</span></span></div>
+          <div class="gstep"><span class="gn">2</span><span class="gtxt"><b>Policy engine</b> OPA / Cedar — <span class="gmeta">tenant · sources · classification ceiling</span></span></div>
+          <div class="gstep"><span class="gn">3</span><span class="gtxt"><b>Rate limit · quota · meter</b> <span class="gmeta">per-tenant, auditable</span></span></div>
+          <div class="gstep"><span class="gn">4</span><span class="gtxt"><b>Guardrails in</b> <span class="gmeta">PII · prompt injection</span></span></div>
+        </div>
+
+        <div class="vlink on"></div>
+        <div class="vlabel">retrieval query · mandatory tag filter injected</div>
+        <div class="vlink on"></div>
+        <div class="lane"><div class="node"><span class="nt">Vector DB</span><span class="ns">top-k · UK-tagged, tenant-scoped only</span></div></div>
+        <div class="vlink on"></div>
+        <div class="vlabel">no external API egress</div>
+        <div class="vlink on"></div>
+        <div class="lane"><div class="node"><span class="nt">In-region LLM</span><span class="ns">NIM / Run.ai</span></div></div>
+        <div class="vlink on"></div>
+        <div class="vlabel">guardrails out → immutable audit log</div>
+        <div class="vlink on"></div>
+        <div class="lane"><div class="node"><span class="nt">Response</span><span class="ns">+ cited sources</span></div></div>
+      </div>
+    </div>
+
+    <div class="props">
+      <div class="prop"><div class="pn">PROP 01</div><h3>One choke point</h3><p>Every inference path routes through the gateway. No side doors to the vector DB or model.</p></div>
+      <div class="prop"><div class="pn">PROP 02</div><h3>Policy is data, not code</h3><p>OPA/Cedar rules are versioned and auditable. Retrieval cannot run without the tag filter injected.</p></div>
+      <div class="prop"><div class="pn">PROP 03</div><h3>Egress default-deny</h3><p>NetworkPolicy + egress allowlist. The stack's “public cloud connectors” are off by default.</p></div>
+      <div class="prop"><div class="pn">PROP 04</div><h3>Every request is evidence</h3><p>Prompt, retrieved chunks, source IDs, model, and decision — logged immutably for the auditor.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">04 / SOVEREIGNTY</span><h2>Four sovereignties, not one</h2></div>
+    <p class="col">“UK sovereign” is really four separate guarantees. Name them separately or you will claim more than you deliver.</p>
+    <div class="sov">
+      <div class="sov-row">
+        <div class="sov-key"><span class="letter">a</span><span class="name">Data residency</span></div>
+        <div class="sov-body">
+          <p>Where the data physically sits.</p>
+          <p class="ctrl">All storage, vector DB, logs, backups and model weights in UK data centres. Default-deny egress; the “public cloud connectors” box is killed or geofenced — those are the paths that break sovereignty.</p>
+        </div>
+      </div>
+      <div class="sov-row">
+        <div class="sov-key"><span class="letter">b</span><span class="name">Data provenance</span></div>
+        <div class="sov-body">
+          <p>The “only surface UK data” guarantee — lives in the RAG layer.</p>
+          <p class="ctrl">Tag at ingest → constrain retrieval to a mandatory metadata filter → pin the model in-region → enforce via policy engine at the gateway. Route to a public OpenAI/Anthropic API and the guarantee is gone.</p>
+        </div>
+      </div>
+      <div class="sov-row">
+        <div class="sov-key"><span class="letter">c</span><span class="name">Operational</span></div>
+        <div class="sov-body">
+          <p>Who can touch it.</p>
+          <p class="ctrl">UK-based, security-cleared operators; no foreign admin or root access to the control plane. Often overlooked, and a first-line question from government buyers.</p>
+        </div>
+      </div>
+      <div class="sov-row">
+        <div class="sov-key"><span class="letter">d</span><span class="name">Jurisdictional</span></div>
+        <div class="sov-body">
+          <p>Whose law can reach it.</p>
+          <p class="ctrl">UK legal entity; structured so no foreign statute (e.g. US CLOUD Act via vendor involvement) can compel disclosure. Backed by UK-held / customer-held keys (BYOK + HSM) and, ideally, GPU confidential compute — so even the operator can't read data under legal pressure.</p>
+        </div>
+      </div>
+    </div>
+    <p class="col" style="margin-top:18px;font-size:13.5px;color:var(--muted);">Evidence buyers will ask for: ISO&nbsp;27001 · SOC&nbsp;2 · Cyber&nbsp;Essentials&nbsp;Plus · NCSC Cloud Security Principles · UK&nbsp;GDPR/DPA&nbsp;2018 — plus DSPT (health) and a G-Cloud listing (public sector).</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">05 / DELIVERY</span><h2>Build vs. buy</h2></div>
+    <p class="col">Buy the substrate and the commodity; build the enforcement and the product surface. Watch the middle rows — several attractive tools quietly break residency.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Component</th><th>Call</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>K8s · bare-metal · hypervisor</td><td><span class="verb buy">buy</span></td><td class="why">Commodity; already co-engineered.</td></tr>
+          <tr><td>Model serving (NIM, Run.ai)</td><td><span class="verb buy">buy</span></td><td class="why">NVIDIA does this better than you will.</td></tr>
+          <tr><td>Internal control plane (Morpheus)</td><td><span class="verb buy">buy</span></td><td class="why">Provisioning, metering, tenancy scaffolding.</td></tr>
+          <tr><td><b>Model gateway</b></td><td><span class="verb build">build</span></td><td class="why">Your enforcement + differentiation. Wrap LiteLLM / Kong / APISIX — don't write from scratch.</td></tr>
+          <tr><td>Policy engine</td><td><span class="verb buy">buy · OSS</span></td><td class="why">OPA / Cedar. You author policies, not the engine.</td></tr>
+          <tr><td>Vector DB</td><td><span class="verb buy">buy · OSS</span></td><td class="why">Qdrant / Weaviate / pgvector, self-hosted in-region.<span class="flag">✕ avoid SaaS vector DBs — break residency</span></td></tr>
+          <tr><td>Ingestion / RAG pipeline</td><td><span class="verb build">build</span></td><td class="why">Classifier + tagging is yours; plumbing (LlamaIndex/Haystack) isn't.</td></tr>
+          <tr><td>Data catalog / lineage</td><td><span class="verb buy">buy · OSS</span></td><td class="why">OpenMetadata / DataHub — source of truth for tags.</td></tr>
+          <tr><td><b>Customer portal / console</b></td><td><span class="verb build">build</span></td><td class="why">No off-the-shelf fit; it's your product. Biggest build item.</td></tr>
+          <tr><td>Identity</td><td><span class="verb buy">buy</span></td><td class="why">Keycloak self-hosted / UK-sovereign IdP. OIDC + SCIM.</td></tr>
+          <tr><td>Billing / rating</td><td><span class="verb buy">buy</span></td><td class="why">Lago self-hosted.<span class="flag">✕ Metronome is US-hosted</span></td></tr>
+          <tr><td>Guardrails</td><td><span class="verb buy">buy · OSS</span></td><td class="why">NeMo Guardrails · Llama Guard · Presidio (PII). Run in-region.</td></tr>
+          <tr><td>Observability</td><td><span class="verb buy">buy · OSS</span></td><td class="why">Prometheus / Grafana / Loki, self-hosted. Logs stay UK-resident.</td></tr>
+          <tr><td>Secrets / keys</td><td><span class="verb buy">buy</span></td><td class="why">Vault + UK HSM/KMS, BYOK. Jurisdiction hinges on key custody.</td></tr>
+          <tr><td>Compliance / certs</td><td><span class="verb buy">buy</span></td><td class="why">Auditors + G-Cloud listing.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="col" style="margin-top:18px;">The genuinely-build shortlist is three items — the <strong>model gateway</strong>, the <strong>ingestion classifier/tagging</strong>, and the <strong>customer portal</strong>. Everything else is assembly. That's where your sovereignty guarantee and your product both live.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">06 / DECIDE NEXT</span><h2>Two calls that shape the build</h2></div>
+    <div class="decisions">
+      <div class="decision">
+        <h3>Isolation model</h3>
+        <p>Single- vs. multi-tenant. High-assurance buyers (gov, health) may need dedicated GPU nodes + a dedicated vector DB per tenant — which rewrites your unit economics.</p>
+      </div>
+      <div class="decision">
+        <h3>Which model, in-region</h3>
+        <p>An open-weights model you fully control is the cleanest sovereignty story. A “sovereign deployment” of a frontier model is stronger capability but a harder jurisdictional argument.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sovereign AI Platform · reference architecture</span>
+    <span>enforce at the gateway · tag at ingest · deny egress</span>
+  </footer>
+
+</div>
+</div>
+
+</body></html>
